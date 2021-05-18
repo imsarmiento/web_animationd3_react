@@ -61,6 +61,7 @@ function App() {
     d3.select(data2005.current).on("click", () => {
       bars
         .transition()
+        .style("fill", "steelblue")
         .attr("y", (d) => y(d.index2005))
         .attr("height", (d) => iheight - y(d.index2005))
         .duration(3000);
